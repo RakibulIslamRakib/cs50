@@ -23,3 +23,13 @@ def register():
             return render_template("apology.html", message="You must provide a email.")
         db.execute("INSERT INTO registrants (name, email) VALUES (:name, :email)", name=name, email=email)
         return redirect("/")
+
+   '''
+   it containes another file call lacture.db
+    Create table registrants(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ##itableregistrantsregistrantsCREATE TABLE 'registrants' (
+    'id' INTEGER PRIMARY KEY,
+    'name' VARCHAR(255),
+    'email' VARCHAR(255)
+)
+and a folder call templates which containg index.html,layout.html,register.html,apology.html
+   ''' 
